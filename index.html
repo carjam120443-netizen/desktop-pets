@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fishOS Desktop Pet</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="desktop-surface" id="desktop">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">✦</span>
+        <span class="brand-text">fishOS</span>
+      </div>
+      <div class="topbar-actions">
+        <button class="action-button" id="feedBtn" title="Feed pet">✎</button>
+        <button class="action-button" id="playBtn" title="Play">☻</button>
+      </div>
+    </header>
+
+    <main class="scene">
+      <section class="pet-wrap">
+        <div class="pet-shadow" id="petShadow"></div>
+
+        <div class="pet-frame" id="pet" tabindex="0" role="button" aria-label="fishOS desktop pet">
+          <div class="pet-shell">
+            <div class="tail">
+              <span class="tail-fin inner"></span>
+            </div>
+
+            <div class="body">
+              <span class="belly">
+                <span class="belly-shine"></span>
+              </span>
+              <span class="face">
+                <span class="left-eye">
+                  <span class="eye-shine"></span>
+                </span>
+                <span class="right-eye">
+                  <span class="eye-shine"></span>
+                </span>
+                <span class="mouth"></span>
+                <span class="blush blush-left"></span>
+                <span class="blush blush-right"></span>
+              </span>
+              <span class="feet">
+                <span class="foot left"></span>
+                <span class="foot right"></span>
+              </span>
+            </div>
+
+            <div class="sparkle sparkle-one">✦</div>
+            <div class="sparkle sparkle-two">✦</div>
+            <div class="sparkle sparkle-three">✦</div>
+          </div>
+        </div>
+
+        <section class="status-panel" id="statusPanel">
+          <div class="status-head">
+            <span class="status-title">pet status</span>
+            <span class="status-mood" id="moodText">happy</span>
+          </div>
+          <div class="status-bars">
+            <div class="status-bar">
+              <span class="bar-label">joy</span>
+              <span class="bar-track"><span class="bar-fill joy-fill" id="joyBar"></span></span>
+            </div>
+            <div class="status-bar">
+              <span class="bar-label">energy</span>
+              <span class="bar-track"><span class="bar-fill energy-fill" id="energyBar"></span></span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
