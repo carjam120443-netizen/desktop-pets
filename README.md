@@ -1,5 +1,7 @@
 # fishOS Desktop Pet
 
+> **Status: Discontinued / dead project.** This repository is no longer actively maintained, and no further updates are planned. It remains available as an archive of the old project, but you should not expect fixes or new features.
+
 A tiny static desktop pet experience built for Windows with plain HTML, CSS, and JavaScript.
 
 ## Run locally on Windows
@@ -8,7 +10,7 @@ A tiny static desktop pet experience built for Windows with plain HTML, CSS, and
 2. Run:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\start-desktop-pet.ps1
+powershell -ExecutionPolicy Bypass -File .\\start-desktop-pet.ps1
 ```
 
 The launcher starts a local HTTP server and opens the pet page in your browser.
